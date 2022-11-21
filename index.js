@@ -10,15 +10,14 @@ function introductionWithLanguage(name, language) {
 introductionWithLanguage("Aki", "Ember.js");
 introductionWithLanguage("Samip", "React");
 
-const language = "JavaScript"
-function introductionWithLanguageOptional(name, language) {
+function introductionWithLanguageOptional(name, language = "JavaScript") {
     
-    const defParam = `Hi, my name is ${name} and I am learning to program in JavaScript.`
+    const defParam = `Hi, my name is ${name} and I am learning to program in ${language}.`
     return defParam
 }
-introductionWithLanguageOptional("Gracie", language);
+introductionWithLanguageOptional("Gracie");
 
-function introductionWithLanguageOptional(name, language) {
+function introductionWithLanguageOptional1(name, language) {
     return ("Hi, my name is " +name+ " and I am learning to program in "+language+".");
 }
-introductionWithLanguageOptional("Gracie", "Python");
+introductionWithLanguageOptional1("Gracie", "Python");
